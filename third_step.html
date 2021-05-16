@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Третий шаг</title>
+</head>
+<body style="background-image: url('1.jpg'); background-size: 100%;">
+    <style>
+        .main-content {
+            height: 500px;
+            width: 500px;
+            margin-top: 50px ;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:  #212529;
+            border: 3px solid #28B0A7;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+
+        .form-row {
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 300px;
+        }
+
+        .button {
+            width: 300px;
+        }
+        li {
+            margin-left: 50px;
+        }
+
+        .fot {
+            height: 60px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #2d3338;
+            color: white;
+            text-align: center;
+        }
+
+        .important {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            font-size: 24px;
+            text-align: center;
+            width: 500px;
+            border: 2px solid #28B0A7;
+            color: aliceblue;
+            background-color: #212529;
+        }
+        
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 100px;">
+        <a class="navbar-brand text-info" style="margin-left: 25px;">Регистрация</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+      </nav>
+
+      <div class="main-content">
+        <h3 style="margin-bottom: -40px; margin-top: 10px; text-align: center; color: aliceblue;">Кабинет студента</h3>
+        <hr style="border: 2px solid #28B0A7; margin-top: 50px; margin-bottom: -50px;">
+        <h3 style="font-size: 17.5px; margin-top: 53px; margin-left: 10px; margin-bottom: -80px;">Какие предметы вы желаете выбрать для мониторинга?</h3>
+        <form onsubmit="return false;">
+            <div class="form-row">
+              <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Английский" id="flexCheckDefault" name="subject">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Английский
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Украинский" id="flexCheckChecked" name="subject">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Украинский
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Немецкий" id="flexCheckDefault" name="subject">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Немецкий
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Физика" id="flexCheckChecked" name="subject">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Физика
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Химия" id="flexCheckDefault" name="subject">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Химия
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="ЛМВЗ" id="flexCheckChecked" name="subject">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      ЛМВЗ
+                    </label>
+                </div>
+              </div>
+              <button class="btn btn-outline-info button" id="next_step" style="margin-top: 20px;">Отправить форму <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM14.346 8.5L8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1h2.846zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1zm6 0h-5v1h5v-1z"/>
+              </svg></button>
+                <button class="btn btn-outline-warning button" style="margin-top: 15px;" id="back_step">Предыдущий шаг <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg></button>
+                <hr style="border: 2px solid #28B0A7; width: 500px; margin-left: -102px; margin-top: 65px;">
+                <span><h4 style="color: aliceblue; text-align: center;">Шаг 3/3</h4></span>
+            </div>
+          </form>
+      </div>
+
+      <footer class="bg-dark fot" style="margin-top: 50px; bottom: 0; height:50px">
+        <div class="content has-text-centered" style="height: 50px; margin-top: 20px;">
+            <p  style="color: #0dcaf0; ">Copy Rights at Shop okey ©</p>
+        </div>
+      </footer>
+
+      <script>
+        const submit_button = document.getElementById('next_step');
+        const reset_button = document.getElementById('back_step');
+
+        submit_button.onclick = function() {
+            let all_subjects = document.getElementsByName('subject');
+            let array = [];
+
+            for (let i = 0; i < all_subjects.length; i++) {
+                if (all_subjects[i].checked) {
+                    array.push(all_subjects[i].value);
+                } 
+            }
+
+            let first_subject = array[0];
+            let second_subject = array[1];
+            let third_subject = array[2];
+
+            localStorage.setItem('firstSubject', first_subject);
+            localStorage.setItem('secondSubject', second_subject);
+            localStorage.setItem('thirdSubject', third_subject);
+
+            let div = document.createElement('div');
+            div.className = 'alert alert-info important';
+            div.innerHTML = 'Ваша форма была успешно отправлена!';
+
+            document.body.append(div);
+
+            setTimeout(() => location.href = "Student_place.html", 2 * 1000);
+        }
+
+        reset_button.onclick = function() {
+            location.href = "Second_step.html";
+        }
+    </script>
+</body>
+</html>
