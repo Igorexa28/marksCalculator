@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-image: url('1.jpg'); background-size: 100%;">
+    <style>
+        .main-content {
+            height: auto;
+            width: 1000px;
+            margin-top: 50px ;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:  #212529;
+            border: 3px solid #28B0A7;
+            border-radius: 10px;
+        }
+
+        .form-row {
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 300px;
+        }
+
+        .button {
+            width: 300px;
+        }
+        li {
+            margin-left: 50px;
+        }
+
+        .fot {
+            height: 60px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #2d3338;
+            color: white;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .text {
+                font-size: 20px;
+                color: aliceblue;
+            }
+
+            .scale {
+                transition: 1s;
+            }
+
+            .scale:hover {
+                transform: scale(1.3);
+                border: 2px solid black;
+            }
+
+            img {
+              border: 2px solid  #28B0A7;
+              border-radius: 10px;
+            }
+
+            video:focus {
+              outline: none;
+            }
+        
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 100px;">
+        <a  class="navbar-brand text-info active" href="Student_place.html" style="margin-left: 25px;">Кабинет студента</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-info" href="Main_page.html">Предметы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="How_to_use.html" style="font-weight: bold; text-shadow: 14px -12px 2px white; color: purple;">Как использовать <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-diamond" viewBox="0 0 16 16">
+                <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main-content">
+        <h3 style="margin-bottom: -40px; margin-top: 10px; text-align: center; color: aliceblue;">Руководство пользователя</h3>
+        <hr style="border: 2px solid #28B0A7; margin-top: 50px; margin-bottom: -50px;">
+        <p class="main-text">
+          <span style="margin-left: 22px;">Пошаговая инструкция</span>
+          <ol>
+              <li>
+                  <p class="text" style="margin-top: 35px;">
+                      В поля : <b>имя</b>, <b>фамилия</b>, <b>город</b> и <b>возраст</b> - введите ваши данные. 
+                      После успешного заполнения формы нажмите на кнопку <strong><i>следующий шаг</i></strong>, которая откроет следующую форму для заполнения.
+                      Если вы желаете покинуть страницу заполнения данных, то нажмите на кнопку <strong><i>покинуть страницу</i></strong>.
+                  </p>
+                  <center>
+                    <img src="Images/image_2021-01-20_20-28-21.png" height="350" width="auto" alt="Пустая форма №1 для заполнения" title="Пустая форма №1" class="scale" style="margin-left: 45px; margin-right: 50px;">
+                  </center>
+              </li>
+              <li>
+                  <p class="text" style="margin-top: 10px;">
+                      В поля : <b>университет</b>, <b>факультет</b>, <b>специальность</b> и <b>группа</b> - введите ваши данные. После успешного заполнения формы
+                       на жмите на кнопку <strong><i>отправить</i></strong>. Если вы желаете вернуться к заполнению предыдущих форм нажмите
+                        на кнопку <strong><i>предыдущий шаг</i></strong>.
+                  </p>
+                  <center>
+                    <img src="Images/image_2021-01-20_21-27-39.png" height="350" width="auto" alt="Полностью заполненная форма №1" title="Заполненная форма №1" class="scale" style="margin-top: 30px; margin-left: -20px;">
+                  </center>  
+              </li>
+              <li>
+                <p class="text" style="margin-top: 10px;">
+                    Выберите предметы которые вы хотите отслеживать, отметив нужные вам чекбоксы. После успешного выбора 
+                    нажмите на кнопку <strong><i>следующий шаг</i></strong>. Если вы желаете вернуться к предыдущей форме,
+                     то нажмите кнопку <strong><i>предыдущий шаг</i></strong>.
+                </p>
+                <center>
+                  <img src="Images/image_2021-01-20_20-29-14.png" height="350" width="auto" alt="Полностью заполненная форма №2" title="Заполненная форма №2" class="scale" style="margin-left: -40px;">
+                </center>  
+              </li>
+              <li>
+                  <p class="text" style="margin-top: 10px;">
+                      После <em><b>успешного выполнения всех шагов</b></em>, вы окажетесь на главной странице нашего приложения.
+                       Здесь у вас будут размещены введенные пользователем данные, которые можно просмотреть и благодаря ним верефицироваться в системе.
+                   </p>
+                  <img src="Images/image_2021-01-20_21-50-06.png" height="350" width="auto" class="scale" style="margin-left: 70px;"><br/>
+              </li>
+              <li>
+                  <p class="text" style="margin-top: 10px;">
+                      Также на главной странице есть шапка, либо же навигационное меню по которому вы можете спокойно передвигаться. Есть три вкладки это 
+                      <b>на главную</b>, <b>как использовать</b> и <b>данные пользователя</b>. Все оно открыто для вашего просмотра и использования!
+                  </p>
+              </li>
+          </ol>
+          <h3 style="text-align: center; color: aliceblue; font-size: 21px; margin-bottom: 10px;">Видео для более наглядного понимания, как пользоваться приложением.</h3>
+          <center>
+          <video controls width="700px" height="auto" poster="" style="border-radius: 10px;">
+              <source src="Images/Instruction.mp4" type="video/mp4">
+              <source src="Images/Instruction.webm" type="video/webm">
+              <source src="Images/Instruction.ogv" type="video/ogg">
+                  Your browser does not support tag video.
+                  Please upgrade your browser!
+                  You can download this video <a href="" target="_blank">here...</a>   
+          </video>
+          </center>
+          <p class="text" style="margin-left: 75px; margin-top: 10px;">
+              В данном видео у вас была возможность увидеть, как пользоваться нашим веб-приложением. 
+              От начала заполнения данных в формах, заканчивая подсчетом своих оценок. Надеемся, что
+               вы получите удовольствие от использования нашего приложения!
+          </p>
+          <center>
+          <button type="submit" id="back_to_main" class="btn btn-outline-info">Вернуться на главную страницу</button>
+          </center>
+      </p>
+      </div>
+
+      <footer class="bg-dark fot" style="margin-top: 50px; bottom: 0; height:50px">
+        <div class="content has-text-centered" style="height: 50px; margin-top: 20px;">
+            <p  style="color: #0dcaf0; ">Copy Rights at Shop okey ©</p>
+         </div>
+     </footer> 
+
+     <script>
+
+       back_to_main.onclick = function() {
+         location.href = "Main_page.html";
+       } 
+
+     </script>
+</body>
+</html>
